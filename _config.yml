@@ -1,30 +1,32 @@
 # Site Settings
 baseurl: ""
-url : "https://naye0ng.github.io"
+url : "https://danimog.github.io"
 
 # Blog Settings
 theme_settings :
-  title : Grape Theme
+  title : Grape Theme rivisited
   favicon : assets/favicon.ico
 
   # Profile Settings
   profile :
-    image : assets/img/smile.png
-    username : Nayeong Kim
-    description : creator of Grape-Theme! Grape-Theme is my first jekyll theme and you can customize this theme easily.
+    image : assets/img/danielemoggia_cartoon.png
+    username : Daniele Moggia
+    description : My first jekyll theme forked from Grape Theme
     experience :
-      - start : 2017-05-03
-        end : 2018-05-06
-        experience : company name, title
+      - start : 2019-08-26
+        end : 2020-01-01
+        experience : Parco Nazionale delle Cinque Terre, Ufficio informatica
     skills : 
       - skill : HTML5 & CSS
         value : 85  # Percent value
+      - skill : PHP
+        value : 70  # Percent value
         
   # Icons
   icons :
     email:  # Full email address, e.g. "sample@google.com"
     linkedin:  # Full URL 
-    github: naye0ng
+    github: danimog
     gitlab: 
     bitbucket: 
     google_plus:
