@@ -1,5 +1,5 @@
 # Site Settings
-baseurl: "Grape-Theme/"
+baseurl: ""
 url : "https://danimog.github.io"
 
 # Blog Settings
@@ -11,32 +11,42 @@ theme_settings :
   profile :
     image : assets/img/danielemoggia_cartoon.png
     username : Daniele Moggia
-    description : My first jekyll theme forked from Grape Theme
+    description : Un blog personale e forse qualcosa in più
     experience :
-      - start : 2019-08-26
-        end : 2020-01-01
+      - start : 2005-05-02
+        end : 
         experience : Parco Nazionale delle Cinque Terre, Ufficio informatica
+      - start : 1999-09-25
+        end : 2005-04-28
+        experience : Docente presso "Durand de La Penne" (SP) - HTML, CSS, sicurezza delle reti
+      - start : 2000-01-01
+        end : 2005-04-28
+        experience : Sylog Italia srl - Programmatore JAVA, HTML, Webdesigner, webmaster
     skills : 
       - skill : HTML5 & CSS
-        value : 85  # Percent value
+        value : 90  # Percent value
       - skill : PHP
-        value : 70  # Percent value
+        value : 75  # Percent value
+      - skill : PYTHON/DJANGO
+        value : 65
+      - skill : JAVASCRIPT
+        value : 35
         
   # Icons
   icons :
-    email:  # Full email address, e.g. "sample@google.com"
+    email:  danielemoggia@protonmail.com
     linkedin:  # Full URL 
     github: danimog
     gitlab: 
     bitbucket: 
     google_plus:
-    twitter:
+    twitter: 
     youtube:
     facebook:
     instagram:
 
   # Disqus
-  disqus_shortname :
+  disqus_shortname : danimog
 
 # Pagination
 paginate: 5

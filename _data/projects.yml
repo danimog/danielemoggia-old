@@ -1,38 +1,72 @@
 - project :
     print : True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
     modal : True # If 'True' is selected, modal can open in 'portfolio.html'. 
-    url : https://github.com/naye0ng/Grape-Theme # Full URL
-    image : "portfolio.png" # path: assets/project/
-    date : 2019.06.09 - Developing
-    title : Grape-Theme
-    summary : A awesome jekyll theme!
-    description : This project is my first jekyll theme. and everyone can customize this easily.  
-    contents :
-        - title : 1. 블로그 첫 화면 구성
-          image : home.png
-          description : <li>Responsive Layout</li>
-            <li>User Profile</li> 
-            <li>Tags</li> 
-            <li>Projects</li> 
-            <li>Pagination</li>
-        - title : 2. 태그 페이지
-          image : tags.png
-          description : <li>Responsive Layout</li> 
-            <li>Tags</li> 
-        - title : 3. 남은 개발 과제
-          image :
-          description : <li>project 부분 디자인 변경</li>
-            <li>favicon.ico, search 기능</li>
-            <li>OG Tag 추가</li>
-            <li>profile 이미지 효과</li>
-            <li>gem 배포</li> 
+    url : https://sciacchetrail.com
+    image : "01_sciacchetrail.png" # path: assets/project/
+    date : 2015.01.01 - Developing
+    title : Sciacchetrail
+    summary : Una gara, un vino, un territorio e la sua gente
+    description : Sito del progetto Sciacchetrail, giunto nel 2020 alla sua 6a edizione        
 
 - project :
     print : True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
     modal : True # If 'True' is selected, modal can open in 'portfolio.html'. 
-    url :  # Full URL
-    image : # path: assets/project/
-    date : 2019.06.09 - Developing
-    title : Dummy project
-    summary : This is Dummy
-    description :  
+    url :  https://cinqueterretrekking.com
+    image : "02_ctt.png"
+    date : 2017.09.02 - Developing
+    title : Cinque Terre Trekking
+    summary : A little gear shop for big adventures
+    description :  Il sito del negozio Cinque Terre Trekking - Manarola Cinque Terre
+
+- project :
+    print : True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
+    modal : True # If 'True' is selected, modal can open in 'portfolio.html'. 
+    url :  https://portovenerecinqueterreisole.com
+    image : "03_unesco.png"
+    date : 2018.12.01 - Developing
+    title : Porto Venere, Cinque Terre e le Isole
+    summary : Sito ufficiale del sito Unesco
+    description :  La Riviera Ligure tra Porto Venere e le Cinque Terre, a est di Genova, rappresenta un paesaggio culturale di straordinario valore in quanto testimonia l'interazione armoniosa tra la gente e la natura per produrre un paesaggio di eccezionale qualità scenica
+
+- project :
+    print : True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
+    modal : True # If 'True' is selected, modal can open in 'portfolio.html'. 
+    url :  http://www.cinqueterrewinetasting.com
+    image : "04_winexperience.png"
+    date : 2015.05.01 - Developing
+    title : Vernazza Wine Experience
+    summary : Una location unica dove degustare i migliori vini Cinque Terre e non
+    description : Vernazza Wine Experience dal 2019 è anche Cinque Sensi, dove trovare vini, olio, liquori locali e le migliori eccellenze italiane
+
+- project :
+    print : True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
+    modal : True # If 'True' is selected, modal can open in 'portfolio.html'. 
+    url :  http://demo.comune.vernazza.sp.it
+    image : "05_comunevernazza.png"
+    date : 2018.06.30 - 2019.05.27
+    title : Comune di Vernazza
+    summary : Quello che dovrebbe essere ma non sarà il sito ufficiale del Comune di Vernazza
+    description : Costruito con le più moderne tecnologie e seguendo le linee guida AGID e Team Digitale. Drupal 7 + PHP + MySQL
+
+- project :
+    print : True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
+    modal : True # If 'True' is selected, modal can open in 'portfolio.html'. 
+    url :  https://cinqueterrebiking.com
+    image : "06_cinqueterrebiking.png"
+    date : 2019.08.12 - Developing
+    title : Cinque Terre Biking
+    summary : Le tue bici a noleggio nelle Cinque Terre
+    description :  Il sito del servizio di noleggio bici e mountain bike nelle Cinque Terre
+# commentato l'eventuale modifica del progetto inserendo una descrizione per punti e contenuti
+    # contents :
+    #     - title : 1. Form
+    #       image : home.png
+    #       description : <li>Responsive Layout</li>
+    #         <li>User Profile</li> 
+    #         <li>Tags</li> 
+    #         <li>Projects</li> 
+    #         <li>Pagination</li>
+    #     - title : 2. Plugin lingue
+    #       image : tags.png
+    #       description : <li>Responsive Layout</li> 
+    #         <li>Tags</li> 
