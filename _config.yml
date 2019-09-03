@@ -44,6 +44,7 @@ theme_settings :
     youtube:
     facebook:
     instagram:
+    nosocial: "https://stallman.org/facebook.html"
 
   # Disqus
   disqus_shortname : danimog
