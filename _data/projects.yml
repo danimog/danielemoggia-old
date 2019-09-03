@@ -51,6 +51,16 @@
 - project :
     print : True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
     modal : True # If 'True' is selected, modal can open in 'portfolio.html'. 
+    url :  http://www.monterossobenecomune.it
+    image : "07_benecomune.png"
+    date : 2019.04.01 - 2019.05.26
+    title : Monterosso Bene Comune
+    summary : Sito della lista "Monterosso Bene Comune" 
+    description :  Il sito del candidato Emanuele Moggia e della sua lista di Consiglieri
+
+- project :
+    print : True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
+    modal : True # If 'True' is selected, modal can open in 'portfolio.html'. 
     url :  https://cinqueterrebiking.com
     image : "06_cinqueterrebiking.png"
     date : 2019.08.12 - Developing
