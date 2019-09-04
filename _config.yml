@@ -36,6 +36,7 @@ theme_settings :
   icons :
     email:  danielemoggia@protonmail.com
     linkedin:  # Full URL 
+    medium: danielemoggia
     github: danimog
     gitlab: 
     bitbucket: 
