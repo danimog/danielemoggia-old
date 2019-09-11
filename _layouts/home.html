@@ -18,9 +18,9 @@ layout: default
     <!-- Post List -->
     <section id="posts" class="col-md-8">
       <h2> Ultimi pensieri </h2>
-
+      
       {% for post in paginator.posts %}
-      <div class="post">
+        <div class="post">
         <a href="{{ post.url | relative_url }}">
           <div class="post-wrap">
             <div class="text-warp">

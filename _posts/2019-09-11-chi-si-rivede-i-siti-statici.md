@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chi si rivede, i siti statici!
+title: Chi si rivede i siti statici!
 subtitle : Creare un sito con HTML e CSS
 tags: [jekyll, html, css]
 author: Daniele Moggia
