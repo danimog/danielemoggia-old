@@ -1,10 +1,13 @@
 ---
-layout: post
 title: Benvenuti nel blog
-subtitle : A bordo! 
-tags: [Intro, di me]
+date: 2019-08-26 00:00:00 Z
+tags:
+- Intro
+- di me
+layout: post
+subtitle: A bordo!
 author: Daniele Moggia
-comments : True
+comments: true
 ---
 
 # Benvenuto a bordo.

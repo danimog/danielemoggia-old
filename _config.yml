@@ -1,63 +1,62 @@
-# Site Settings
-baseurl: ""
-url : "https://danimog.github.io"
-
-# Blog Settings
-theme_settings :
-  title : danielemoggia
-  favicon : assets/favicon.ico
-
-  # Profile Settings
-  profile :
-    image : assets/img/danielemoggia_cartoon.png
-    username : Daniele Moggia
-    description : Un blog personale e forse qualcosa in più
-    experience :
-      - start : 2005-05-02
-        end : 
-        experience : Parco Nazionale delle Cinque Terre, Ufficio informatica
-      - start : 1999-09-25
-        end : 2005-04-28
-        experience : Docente presso "Durand de La Penne" (SP) - HTML, CSS, sicurezza delle reti
-      - start : 2000-01-01
-        end : 2005-04-28
-        experience : Sylog Italia srl - Programmatore JAVA, HTML, Webdesigner, webmaster
-    skills : 
-      - skill : HTML5 & CSS
-        value : 90  # Percent value
-      - skill : PHP
-        value : 75  # Percent value
-      - skill : PYTHON/DJANGO
-        value : 65
-      - skill : JAVASCRIPT
-        value : 35
-        
-  # Icons
-  icons :
-    email:  danielemoggia@protonmail.com
-    linkedin:  # Full URL 
+---
+title: Danimog.Github.Io
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+baseurl: ''
+url: https://danimog.github.io
+theme_settings:
+  title: danielemoggia
+  favicon: assets/favicon.ico
+  profile:
+    image: assets/img/danielemoggia_cartoon.png
+    username: Daniele Moggia
+    description: Un blog personale e forse qualcosa in più
+    experience:
+    - start: 2005-05-02 00:00:00.000000000 Z
+      end: 
+      experience: Parco Nazionale delle Cinque Terre, Ufficio informatica
+    - start: 1999-09-25 00:00:00.000000000 Z
+      end: 2005-04-28 00:00:00.000000000 Z
+      experience: Docente presso "Durand de La Penne" (SP) - HTML, CSS, sicurezza
+        delle reti
+    - start: 2000-01-01 00:00:00.000000000 Z
+      end: 2005-04-28 00:00:00.000000000 Z
+      experience: Sylog Italia srl - Programmatore JAVA, HTML, Webdesigner, webmaster
+    skills:
+    - skill: HTML5 & CSS
+      value: 90
+    - skill: PHP
+      value: 75
+    - skill: PYTHON/DJANGO
+      value: 65
+    - skill: JAVASCRIPT
+      value: 35
+  icons:
+    email: danielemoggia@protonmail.com
+    linkedin: 
     medium: danielemoggia
     github: danimog
     gitlab: 
     bitbucket: 
-    google_plus:
+    google_plus: 
     twitter: 
-    youtube:
-    facebook:
-    instagram:
-    nosocial: "https://stallman.org/facebook.html"
-
-  # Disqus
-  disqus_shortname : danimog
-
-# Pagination
+    youtube: 
+    facebook: 
+    instagram: 
+    nosocial: https://stallman.org/facebook.html
+  disqus_shortname: danimog
 paginate: 5
-paginate_path: "blog/page:num"
-
-# Build Ssttings
+paginate_path: blog/page:num
 sass:
   sass_dir: _sass
   style: :compressed
-gems: [jekyll-paginate]
+gems:
+- jekyll-paginate
 bootstrap:
   assets: true

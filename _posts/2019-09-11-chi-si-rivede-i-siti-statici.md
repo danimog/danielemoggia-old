@@ -1,10 +1,14 @@
 ---
-layout: post
 title: Chi si rivede i siti statici!
-subtitle : Creare un sito con HTML e CSS
-tags: [jekyll, html, css]
+date: 2019-09-11 00:00:00 Z
+tags:
+- jekyll
+- html
+- css
+layout: post
+subtitle: Creare un sito con HTML e CSS
 author: Daniele Moggia
-comments : True
+comments: true
 ---
 
 # Chi si rivede! I siti statici!
