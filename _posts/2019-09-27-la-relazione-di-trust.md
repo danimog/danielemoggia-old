@@ -5,7 +5,7 @@ tags:
 - Windows 7
 - Hakcing
 layout: post
-subtitle: ..questione di fiducia..
+subtitle: "..questione di fiducia.."
 author: Daniele Moggia
 comments: true
 ---
