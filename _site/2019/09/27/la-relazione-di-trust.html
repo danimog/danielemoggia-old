@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+
+  <!-- Spoqa Han Sans -->
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- OG Tag -->
+  
+  <meta name="title" content="danielemoggia-La relazione di trust..." />
+  <meta name="author" content="Daniele Moggia" />
+  <meta name="keywords" content="Windows 7,Hakcing" />
+  <meta name="description" content="..questione di fiducia.." />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="danielemoggia-La relazione di trust..." />
+  <meta property="og:description" content="..questione di fiducia.." />
+  <meta property="og:type" content="website, blog" />
+  <meta property="og:image"
+    content="http://localhost:4000/assets/img/danielemoggia_cartoon.png" />
+  <meta property="og:site_name" content="danielemoggia" />
+  <meta property="og:url" content="http://localhost:4000/2019/09/27/la-relazione-di-trust.html" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="danielemoggia-La relazione di trust..." />
+  <meta name="twitter:description" content="..questione di fiducia.." />
+  <meta name="twitter:image"
+    content="http://localhost:4000/assets/img/danielemoggia_cartoon.png" />
+
+  <title>danielemoggia-La relazione di trust...</title>
+</head>
+<body>
+  <div class="container">
+    
+
+<header>
+  <nav>
+    <ul>
+      
+      <!-- others -->
+      <a href="http://localhost:4000">
+        <li class="current btn-nav">Blog</li>
+      </a>
+      <a href="http://localhost:4000/tags">
+        <li class="btn-nav">Tags</li>
+      </a>
+      <a href="http://localhost:4000/portfolio">
+        <li class="btn-nav">Portfolio</li>
+      </a>
+      
+    </ul>
+  </nav>
+</header>
+<div id="post">
+  <section class="post-header">
+    <h1 class="title">La relazione di trust...</h1>
+    <p class="subtitle">..questione di fiducia..</p>
+    <p class="meta">
+      September 27, 2019
+    </p>
+  </section>
+  <section class="post-content">
+    <p>La collega mi chiama: il computer è bloccato non riesco ad accedere.
+Mi siedo alla postazione e controllo il PC fermo nella schermata CTRL + ALT + CANC.
+Premo la combinazione e provo il login come Administrator nella rete locale.</p>
+
+<blockquote>
+  <p>“La relazione di trust tra questa workstation e il dominio primario non riuscita”.</p>
+</blockquote>
+
+<p>Mi pareva di aver già sistemato un tempo la cosa e probabilmente DuckDuckGo mi rinfrescherà la memoria.
+Sembra in effetti semplice la risoluzione che il supporto tecnico di Windows fornisce a questa pagina:
+<a href="https://support.microsoft.com/it-it/help/2771040/the-trust-relationship-between-this-workstation-and-the-primary-domain">https://support.microsoft.com/it-it/help/2771040/the-trust-relationship-between-this-workstation-and-the-primary-domain</a></p>
+
+<p>Ritorno al PC riavvio e accedo ad Administrator del PC (e non della rete locale).
+<strong>La password. Primo tentativo vuota, a vuoto.</strong>
+Riprovo con le password conosciute.
+Niente.
+Panico.
+Inizio la mia lunga giornata a cercare una soluzione. Connessione da ufficio lentissima, non riesco a scaricare a modo i tool che la ricerca su Internet mi dice.
+La ricerca si concentra su come resettare la password di Administrator. In rete si trova di tutto. Provo con il safe mode: niente.
+Tento con il safe mode con console. Di nuovo nulla di fatto, la console non esce e mi presenta sempre il famigerato CTRL + ALT + CANC.
+Provo a scaricare windows password recovery ma la versione free non consente nulla.
+Ancora ricerca su internet ma pare nessuno abbia questo problema.
+Ritorno allora su un tool di reset della password. Scarico (in oltre 45 minuti..) Ophcrack.
+Lo carico su una penna USB che rendo bootabile.
+Procedo sul pc “malato” ma dei 3 account presenti non riesce a risolvere la password di nessuno di essi.
+<strong>E’ quasi ora di pranzo e il computer è sempre bloccato.</strong>
+Ancora rete, ancora forum, ancora tentativi.
+Lancio il download di un programmino che promette bene: <a href="http://pogostick.net/~pnh/ntpasswd/">http://pogostick.net/~pnh/ntpasswd/</a>
+Fantastico il loro sito (schermata grigio con caratteri neri e bottoni “primi anni 2000 style”. Parte il download. Oltre 20 minuti.
+Seguo le istruzioni:</p>
+<blockquote>
+  <p>How to make an bootable USB drive
+Copy all the files that is inside the usbXXXXXX.zip or on the CD onto an usb drive, directly on the drive, not inside any directory/folder.
+It is OK if there are other files on the USB drive from before, they will not be removed.
+Install bootloader on the USB drive, from command prompt in windows (start the command line with “run as administrator” if possible)
+X:syslinux.exe -ma X:
+Replace X: with the drive letter the USB drive shows up as (DO NOT USE C:)
+If it seems like nothing happened, it is usually done.
+However, a file named ldlinux.sys may appear on the USB drive, that is normal.
+It should now in theory be bootable.
+Please know that getting some computers to boot from USB is worse than from CD, you may have to change settings, or some will not simply work at all.</p>
+</blockquote>
+
+<p>Però io sto lavorando da mac… Prendo un altro computer, windows e dopo qualche minuto lancio un prompt dei comandi come amministratore (certo che il terminale mac o la shell di linux sono più comodi ma il prompt per renderlo amministratore lo fai cliccando con tasto destro e lanciarlo come “Run as administrator”.
+Seguo i dettami del sito e finalmente ho la penna usb pronta.
+Inserisco nel PC bloccato e lancio il boot da USB.
+Mi carica un OS minimale senza grafica. Seguo i passi.
+Mi chiede quale utente voglio modificare e scelgo un utente terzo (rispetto l’admin e il guest) ma sempre con diritti di amministratore del sistema.
+Resetto la password ed esco.
+Riavvio il pc ma nulla, l’inserimento della password vuota non funziona ed anzi mi blocca l’utente.
+Ci riprovo. Ma questa volta salvo la modifica (nei precedenti tentativi lasciavo l’opzione di default N).
+Finalmente al riavvio e alla selezione dell’utente la password vuota funziona.
+Accedo al PC. E da questo punto in poi posso modificare le password (anche quella da Amministratore!) e così poi seguire la prima semplice guida per sistemare l’errore iniziale:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Utilizzare un account di amministratore locale per l’accesso al computer.
+</code></pre></div></div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Selezionare Start, premere e tenere premuto <span class="o">(</span>o destro<span class="o">)</span> Computer <span class="o">&gt;</span> , proprietà.
+</code></pre></div></div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Selezionare Modifica impostazioni accanto al nome del computer.
+</code></pre></div></div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Nella scheda Nome Computer , selezionare Modifica.
+</code></pre></div></div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Sotto il titolo di membro di , selezionare gruppo di lavoro, digitare un nome di gruppo di lavoro e quindi scegliere OK.
+</code></pre></div></div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Quando viene chiesto di riavviare il computer, scegliere OK.
+</code></pre></div></div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Nella scheda Nome Computer , selezionare Modifica nuovamente.
+</code></pre></div></div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Sotto il titolo, membro del dominio selezionare e quindi digitare il nome di dominio.
+</code></pre></div></div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Fare clic su OK e quindi digitare le credenziali dell’utente che disponga delle autorizzazioni nel dominio.
+</code></pre></div></div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Quando viene chiesto di riavviare il computer, scegliere OK.
+</code></pre></div></div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Riavviare il computer.
+</code></pre></div></div>
+<p>Finalmente dopo una estenuante giornata a surfare sul web la collega accede al suo Computer.</p>
+
+
+  </section>
+</div>
+
+<div id="top" class="top-btn" onclick="moveTop()">
+  <i class="fas fa-chevron-up"></i>
+</div>
+
+<!-- Disqus -->
+
+<div id="comments">
+  <div class="border">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'danimog';
+  (function () {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript></noscript>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+  <div class="footer">
+    Copyright © 2019
+    <a href="https://github.com/danimog">Daniele Moggia</a>. Powered by Jekyll with many <i class="fas fa-wine-glass-alt"></i>
+    <br>Thanks to <a href="https://github.com/naye0ng/Grape-Theme" target="_blank"> Grape Theme</a>
+  </div>
+</footer>
+
+<script>
+  var lastScrollTop = 0;
+  window.onscroll = function () {
+    var st = document.body.scrollTop || document.documentElement.scrollTop;
+    if (st > 250) {
+      document.getElementById("top").style.display = "block"
+      if (st > lastScrollTop) {
+        document.getElementById("top").style.opacity = 0
+      } else {
+        document.getElementById("top").style.opacity = 1
+      }
+    } else {
+      document.getElementById("top").style.opacity = 0
+      if (st > lastScrollTop) {
+        document.getElementById("top").style.display = "none"
+      }
+    }
+    lastScrollTop = st <= 0 ? 0 : st;
+  }
+  function moveTop() {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+  }
+</script>
+  </div>
+</body>
+
+</html>

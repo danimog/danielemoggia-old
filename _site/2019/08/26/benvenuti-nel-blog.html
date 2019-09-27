@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+
+  <!-- Spoqa Han Sans -->
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- OG Tag -->
+  
+  <meta name="title" content="danielemoggia-Benvenuti nel blog" />
+  <meta name="author" content="Daniele Moggia" />
+  <meta name="keywords" content="Intro,di me" />
+  <meta name="description" content="A bordo!" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="danielemoggia-Benvenuti nel blog" />
+  <meta property="og:description" content="A bordo!" />
+  <meta property="og:type" content="website, blog" />
+  <meta property="og:image"
+    content="http://localhost:4000/assets/img/danielemoggia_cartoon.png" />
+  <meta property="og:site_name" content="danielemoggia" />
+  <meta property="og:url" content="http://localhost:4000/2019/08/26/benvenuti-nel-blog.html" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="danielemoggia-Benvenuti nel blog" />
+  <meta name="twitter:description" content="A bordo!" />
+  <meta name="twitter:image"
+    content="http://localhost:4000/assets/img/danielemoggia_cartoon.png" />
+
+  <title>danielemoggia-Benvenuti nel blog</title>
+</head>
+<body>
+  <div class="container">
+    
+
+<header>
+  <nav>
+    <ul>
+      
+      <!-- others -->
+      <a href="http://localhost:4000">
+        <li class="current btn-nav">Blog</li>
+      </a>
+      <a href="http://localhost:4000/tags">
+        <li class="btn-nav">Tags</li>
+      </a>
+      <a href="http://localhost:4000/portfolio">
+        <li class="btn-nav">Portfolio</li>
+      </a>
+      
+    </ul>
+  </nav>
+</header>
+<div id="post">
+  <section class="post-header">
+    <h1 class="title">Benvenuti nel blog</h1>
+    <p class="subtitle">A bordo!</p>
+    <p class="meta">
+      August 26, 2019
+    </p>
+  </section>
+  <section class="post-content">
+    <h1 id="benvenuto-a-bordo">Benvenuto a bordo.</h1>
+<p>Di che si parla qui? Dipende.
+Scrivo di tentativi di programmazione, viaggi abbozzati, musica, politica (seriamente?), cibo, vino, sentieri e sport.</p>
+
+<blockquote>
+  <p>E questo primo post dovrebbe dire tutto o forse niente di quello che sarà questo spazio; che forse non andrà o forse tra mesi sarà cercato da molte più persone.</p>
+</blockquote>
+
+<h2 id="si-salpa">Si salpa</h2>
+<p>Dopo un po’ di tempo ho messo mano al “mio” sito personale, aggiornando progetti, bio e cose su cui sto perdendo del tempo (o forse no).</p>
+
+
+  </section>
+</div>
+
+<div id="top" class="top-btn" onclick="moveTop()">
+  <i class="fas fa-chevron-up"></i>
+</div>
+
+<!-- Disqus -->
+
+<div id="comments">
+  <div class="border">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'danimog';
+  (function () {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript></noscript>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+  <div class="footer">
+    Copyright © 2019
+    <a href="https://github.com/danimog">Daniele Moggia</a>. Powered by Jekyll with many <i class="fas fa-wine-glass-alt"></i>
+    <br>Thanks to <a href="https://github.com/naye0ng/Grape-Theme" target="_blank"> Grape Theme</a>
+  </div>
+</footer>
+
+<script>
+  var lastScrollTop = 0;
+  window.onscroll = function () {
+    var st = document.body.scrollTop || document.documentElement.scrollTop;
+    if (st > 250) {
+      document.getElementById("top").style.display = "block"
+      if (st > lastScrollTop) {
+        document.getElementById("top").style.opacity = 0
+      } else {
+        document.getElementById("top").style.opacity = 1
+      }
+    } else {
+      document.getElementById("top").style.opacity = 0
+      if (st > lastScrollTop) {
+        document.getElementById("top").style.display = "none"
+      }
+    }
+    lastScrollTop = st <= 0 ? 0 : st;
+  }
+  function moveTop() {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+  }
+</script>
+  </div>
+</body>
+
+</html>
