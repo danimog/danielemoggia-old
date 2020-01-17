@@ -5,7 +5,7 @@ tags:
 - siteleaf
 ---
 
-Cerco su web la tendenza per il web 2019: CMS vs siti statici.
+Cerco su web la tendenza per il web 2019: CMS vs siti **statici**.
 Trovo un articolo molto interessante.
 Link al sito di [siteleaf](https://www.siteleaf.com/).
 Questo è il primo articolo scritto con siteleaf
